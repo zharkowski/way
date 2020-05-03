@@ -33,13 +33,13 @@
   .nav__item {
     margin: 30px 0 0 0;
     min-height: 60px;
-    padding: 0 calc((100% - 768px) / 2);
+    padding: 0;
 
     background-color: #fbf8f8;
   }
 
   .nav__link {
-    margin: 16px;
+    margin: 17px 21px;
 
     font-style: normal;
     font-weight: 600;
@@ -52,8 +52,12 @@
   .nav__item {
     margin: 30px 0 0 0;
     min-height: 60px;
-    padding: 0 calc((100% - 320px) / 2);
+    padding: 0;
 
     background-color: #fbf8f8;
+  }
+
+  .nav__link {
+    margin: 17px 16px;
   }
 }

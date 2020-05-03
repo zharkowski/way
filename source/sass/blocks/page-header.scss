@@ -4,7 +4,7 @@
 
 .page-header__wrapper {
   display: flex;
-  width: $desktop-width - $desktop-padding * 2;
+  max-width: 1200px;
   padding: 39px $desktop-padding;
   margin: 0 auto;
 }
@@ -33,12 +33,16 @@
   text-decoration: underline;
 }
 
+.page-header__phone:hover {
+  color: $accent-hover;
+}
+
 @media (max-width: $desktop-width) {
   .page-header__wrapper {
     display: block;
-    width: auto;
+    //width: auto;
     margin: 0;
-    //width: $tablet-width;
+    max-width: $desktop-width;
     padding: 0;
   }
 
@@ -50,7 +54,7 @@
     display: flex;
     justify-content: space-between;
     min-height: 50px;
-    width: $tablet-width;
+    max-width: $desktop-width;
     margin: 0 auto;
   }
 
@@ -117,7 +121,7 @@
 
 @media (max-width: $tablet-width) {
   .page-header__logo-toggle-wrapper {
-    width: $mobile-width;
+    max-width: $tablet-width;
   }
 
   .page-header__logo-link {

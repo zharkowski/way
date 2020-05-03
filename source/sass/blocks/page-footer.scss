@@ -1,0 +1,27 @@
+.page-footer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(20, 21, 23, 0.5);
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 0 $desktop-padding;
+  margin: 0 auto;
+}
+
+.page-footer__header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $text-color;
+}
+
+@media (max-width: $desktop-width) {
+
+}

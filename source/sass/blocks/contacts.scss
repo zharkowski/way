@@ -1,0 +1,17 @@
+.contacts {
+  width: 270px;
+}
+
+.contacts__item {
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+.contacts__link {
+  color: $accent;
+  text-decoration: underline;
+}
+
+.contacts__link:hover {
+  color: $accent-hover;
+}

@@ -1,0 +1,14 @@
+.next-trips {
+  width: 350px;
+}
+
+.next-trips__columns-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $desktop-width) {
+  .next-trips {
+
+  }
+}
