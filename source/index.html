@@ -5,32 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Way</title>
+  <link rel="preload" href="fonts/montserrat-regular-400.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-medium-500.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-semibold-600.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-bold-700.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <h1>qwerty</h1>
-      <a class="page-header__logo-link" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/57x22" alt="Логотип Way" width="57" height="22">
-      </a>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+    <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
+      <div class="page-header__logo-toggle-wrapper">
+        <a class="page-header__logo-link" href="#">
+          <img class="page-header__logo-image" src="img/way-logo.svg" alt="Логотип Way" width="57" height="22">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+      </div>
       <nav class="page-header__nav nav">
-        <ul class="nav__list site-list">
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">О путешествии</a>
+        <ul class="nav__list site-list list">
+          <li class="nav__item site-list__item">
+            <a href="#" class="nav__link site-list__link">О путешествии</a>
           </li>
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">Цены</a>
-          </li>
-          <li class="site-list__item">
-            <a href="tel:+749978468446" class="site-list__link">+7 (499) -784-684-46</a>
+          <li class="nav__item site-list__item">
+            <a href="#" class="nav__link site-list__link">Цены</a>
           </li>
         </ul>
       </nav>
+      <a href="tel:+749978468446" class="page-header__phone">+7 (499) -784-684-46</a>
     </div>
   </header>
+
   <main></main>
+
   <footer></footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 </html>

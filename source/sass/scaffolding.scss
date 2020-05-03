@@ -5,8 +5,8 @@ body {
 
   font-size: 18px;
   line-height: 30px;
-  //font-family: $default-font;
-  color: red;
+  font-family: $default-font;
+  color: $text-color;
   font-style: normal;
 
   background-color: $white;
@@ -15,8 +15,4 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-h1 {
-  color: blue;
 }

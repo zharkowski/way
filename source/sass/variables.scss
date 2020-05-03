@@ -5,11 +5,16 @@ $tablet-width: 768px;
 $desktop-width: 1024px;
 
 $desktop-padding: 14px;
+$tablet-padding: 21px;
 
 $white: #ffffff;
+$light: #e5e5e5;
 $accent: #fe7865;
 $accent-hover: #f17d4b;
 $dark: #2c2e3f;
 $very-dark: #141517;
 
 $text-color: $dark;
+
+$menu-close-button-color: rgba(20, 21, 23, 0.2);
+$menu-open-button-color: $white;
