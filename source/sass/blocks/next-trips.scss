@@ -1,14 +1,37 @@
 .next-trips {
   width: 350px;
+  margin-bottom: 70px;
 }
 
 .next-trips__columns-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 @media (max-width: $desktop-width) {
   .next-trips {
+    width: 46.6%;
+    margin-bottom: 30px;
+  }
 
+  .next-trips__column {
+    width: 95px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .next-trips {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .next-trips__column {
+    width: 134px;
+    margin-bottom: 20px;
+  }
+
+  .next-trips__columns-list {
+    justify-content: space-evenly;
   }
 }

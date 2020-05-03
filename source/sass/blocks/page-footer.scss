@@ -9,12 +9,14 @@
 .page-footer__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1200px;
   padding: 0 $desktop-padding;
   margin: 0 auto;
 }
 
 .page-footer__header {
+  margin: 0 0 20px 0;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -23,5 +25,24 @@
 }
 
 @media (max-width: $desktop-width) {
+  .page-footer__wrapper {
+    max-width: $desktop-width;
+    padding: 0 $tablet-padding;
+  }
 
+  .page-footer__header {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer {
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  .page-footer__wrapper {
+    max-width: $tablet-width;
+    padding: 0 14px;
+  }
 }

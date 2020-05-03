@@ -40,7 +40,6 @@
 @media (max-width: $desktop-width) {
   .page-header__wrapper {
     display: block;
-    //width: auto;
     margin: 0;
     max-width: $desktop-width;
     padding: 0;
@@ -125,7 +124,7 @@
   }
 
   .page-header__logo-link {
-    margin: 18.5px 0 auto 16px;
+    margin: 18.5px 0 auto $mobile-padding;
   }
 
   .page-header__toggle {

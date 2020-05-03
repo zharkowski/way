@@ -1,5 +1,6 @@
 .contacts {
   width: 270px;
+  margin-bottom: 70px;
 }
 
 .contacts__item {
@@ -14,4 +15,22 @@
 
 .contacts__link:hover {
   color: $accent-hover;
+}
+
+@media (max-width: $desktop-width) {
+  .contacts {
+    width: 38%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contacts__item {
+    padding-left: 15px;
+  }
 }

@@ -1,3 +1,22 @@
 .corporate-trip {
   width: 320px;
+  margin-bottom: 70px;
+}
+
+@media (max-width: $desktop-width) {
+  .corporate-trip {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: $tablet-padding) {
+  .corporate-trip {
+    margin-bottom: 25px;
+  }
+
+  .corporate-trip__description {
+    margin: 0;
+  }
 }
