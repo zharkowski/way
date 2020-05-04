@@ -16,10 +16,30 @@
   color: $accent-hover;
 }
 
+.contacts__mail {
+  &--desktop {
+    display: inline;
+  }
+
+  &--tablet-mobile {
+    display: none;
+  }
+}
+
 @media (max-width: $desktop-width) {
   .contacts {
     width: 38%;
     margin-bottom: 30px;
+  }
+
+  .contacts__mail {
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet-mobile {
+      display: inline;
+    }
   }
 }
 
