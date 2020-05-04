@@ -2,6 +2,7 @@
 @import "fonts";
 @import "variables";
 @import "scaffolding";
+@import "mixins";
 @import "blocks/list";
 @import "blocks/page-header";
 @import "blocks/visually-hidden";
@@ -11,6 +12,8 @@
 @import "blocks/next-trips";
 @import "blocks/contacts";
 @import "blocks/corporate-trip";
+@import "blocks/intro";
+@import "blocks/button";
 
 // временно для разметки
 //@import "outline";

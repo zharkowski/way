@@ -4,9 +4,10 @@
 
 .page-header__wrapper {
   display: flex;
-  max-width: 1200px;
-  padding: 39px $desktop-padding;
-  margin: 0 auto;
+  @include wrapper();
+  padding-top: 39px;
+  min-height: 100px;
+  box-sizing: border-box;
 }
 
 .page-header__logo-toggle-wrapper {
@@ -39,9 +40,9 @@
 
 @media (max-width: $desktop-width) {
   .page-header__wrapper {
+    min-height: 0;
     display: block;
     margin: 0;
-    max-width: $desktop-width;
     padding: 0;
   }
 
@@ -119,10 +120,6 @@
 }
 
 @media (max-width: $tablet-width) {
-  .page-header__logo-toggle-wrapper {
-    max-width: $tablet-width;
-  }
-
   .page-header__logo-link {
     margin: 18.5px 0 auto $mobile-padding;
   }

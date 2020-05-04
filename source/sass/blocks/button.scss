@@ -1,0 +1,43 @@
+.button {
+  display: flex;
+  align-items: center;
+  width: 340px;
+  height: 75px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+
+  background-color: $accent;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: $white;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $accent-hover;
+}
+
+@media (max-width: $desktop-width) {
+  .button {
+    width: 250px;
+    height: 50px;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .button {
+    width: 288px;
+  }
+}

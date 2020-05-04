@@ -1,4 +1,6 @@
 .page-footer {
+  margin-top: 70px;
+  margin-bottom: 70px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -10,9 +12,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
-  padding: 0 $desktop-padding;
-  margin: 0 auto;
+  padding: 0;
+  @include wrapper();
 }
 
 .page-footer__header {
@@ -25,11 +26,6 @@
 }
 
 @media (max-width: $desktop-width) {
-  .page-footer__wrapper {
-    max-width: $desktop-width;
-    padding: 0 $tablet-padding;
-  }
-
   .page-footer__header {
     font-weight: 600;
   }
@@ -38,11 +34,9 @@
 @media (max-width: $tablet-width) {
   .page-footer {
     text-align: center;
-    padding-top: 70px;
   }
 
   .page-footer__wrapper {
-    max-width: $tablet-width;
     padding: 0 14px;
   }
 }

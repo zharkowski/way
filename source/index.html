@@ -15,7 +15,7 @@
   <header class="page-header">
     <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
       <div class="page-header__logo-toggle-wrapper">
-        <a class="page-header__logo-link" href="#">
+        <a class="page-header__logo-link">
           <img class="page-header__logo-image" src="img/way-logo.svg" alt="Логотип Way" width="57" height="22">
         </a>
         <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
@@ -23,10 +23,10 @@
       <nav class="page-header__nav nav">
         <ul class="nav__list site-list list">
           <li class="nav__item site-list__item">
-            <a href="#" class="nav__link site-list__link">О путешествии</a>
+            <a href="#places" class="nav__link site-list__link">О путешествии</a>
           </li>
           <li class="nav__item site-list__item">
-            <a href="#" class="nav__link site-list__link">Цены</a>
+            <a href="#prices" class="nav__link site-list__link">Цены</a>
           </li>
         </ul>
       </nav>
@@ -34,7 +34,24 @@
     </div>
   </header>
 
-  <main></main>
+  <main class="page-main">
+    <h1 class="visually-hidden">Way</h1>
+    <section class="intro">
+      <div class="intro__wrapper">
+        <h2 class="intro__header">Путешествие по Европе</h2>
+        <p class="intro__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+        <a href="#tabs" class="intro__button button">смотреть тур</a>
+      </div>
+    </section>
+
+    <section class="places" id="places"></section>
+
+    <section class="tabs" id="tabs"></section>
+
+    <section class="prices" id="prices"></section>
+
+    <section class="form"></section>
+  </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
