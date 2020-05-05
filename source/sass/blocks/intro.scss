@@ -50,6 +50,8 @@
 
 @media (max-width: $desktop-width) {
   .intro {
+    min-height: 344px;
+
     background-image: url("../img/intro-bg-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -89,7 +91,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-bottom: 21px;
+    padding-bottom: 3px;
     min-height: 568px;
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
