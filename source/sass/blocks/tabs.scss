@@ -1,0 +1,36 @@
+.tabs__wrapper {
+  @include wrapper();
+}
+
+.tabs__countries-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs__countries-item {
+  margin-right: 99px;
+}
+
+.tabs__country {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.415px;
+  color: rgba(44, 46, 63, 0.3);
+  cursor: pointer;
+
+  &:hover {
+    color: $accent-hover;
+  }
+
+  &--checked,
+  &--checked:hover {
+    color: $accent;
+    cursor: default;
+  }
+}
+

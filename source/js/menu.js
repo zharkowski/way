@@ -1,6 +1,5 @@
-'use strict';
-var pageHeaderWrapper = document.querySelector('.page-header__wrapper');
-var headerToggle = document.querySelector('.page-header__toggle');
+const pageHeaderWrapper = document.querySelector('.page-header__wrapper');
+const headerToggle = document.querySelector('.page-header__toggle');
 
 pageHeaderWrapper.classList.remove('page-header__wrapper--nojs');
 

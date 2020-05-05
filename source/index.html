@@ -133,9 +133,48 @@
       </div>
     </section>
 
-    <section class="tabs" id="tabs"></section>
+    <div class="page-main__tabs-prices-wrapper">
+      <section class="tabs" id="tabs">
+        <div class="tabs__wrapper">
+          <ul class="tabs__countries-list list">
+            <li class="tabs__countries-item">
+              <span class="tabs__country tabs__country--checked" data-country="greece">Греция</span>
+            </li>
+            <li class="tabs__countries-item">
+              <span class="tabs__country" data-country="albania">Албания</span>
+            </li>
+            <li class="tabs__countries-item">
+              <span class="tabs__country" data-country="macedonia">Македония</span>
+            </li>
+            <li class="tabs__countries-item">
+              <span class="tabs__country" data-country="montenegro">Черногория</span>
+            </li>
+            <li class="tabs__countries-item">
+              <span class="tabs__country" data-country="croatia">Хорватия</span>
+            </li>
+          </ul>
+          <ul class="tabs__cards-list list">
+            <li class="tabs__cards-item" data-country="greece">
+              Греция
+            </li>
+            <li class="tabs__cards-item visually-hidden" data-country="albania">
+              Албания
+            </li>
+            <li class="tabs__cards-item visually-hidden" data-country="macedonia">
+              Македония
+            </li>
+            <li class="tabs__cards-item visually-hidden" data-country="montenegro">
+              Черногория
+            </li>
+            <li class="tabs__cards-item visually-hidden" data-country="croatia">
+              Хорватия
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="prices" id="prices"></section>
+      <section class="prices" id="prices"></section>
+    </div>
 
     <section class="form"></section>
   </main>
@@ -202,6 +241,7 @@
   </footer>
 
   <script src="js/menu.js"></script>
+  <script src="js/tabs.js"></script>
   <script src="js/popup.js"></script>
 </body>
 </html>
