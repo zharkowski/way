@@ -19,11 +19,6 @@ const changeTabHandler = (evt) => {
 	currentCountryCard.classList.add(`visually-hidden`);
 	newCountryLink.classList.add(`tabs__country--checked`);
 	newCountryCard.classList.remove(`visually-hidden`);
-
-	console.log(currentCountryName);
-	console.log(newCountryName);
-	console.log(currentCountryCard);
-	console.log(newCountryCard);
 };
 
 tabLinkNames.forEach(tab => tab.addEventListener('click', changeTabHandler));
