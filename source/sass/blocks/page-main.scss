@@ -1,7 +1,8 @@
 .page-main__tabs-prices-wrapper {
   background-image: url("../img/tabs-prices-bg-desktop.png");
-  background-size: 100%;
-  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 1444px auto;
+  background-position: center 134px;
 }
 
 @media (max-width: $desktop-width) {
