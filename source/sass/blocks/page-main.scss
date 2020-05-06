@@ -3,3 +3,9 @@
   background-size: 100%;
   background-position: top center;
 }
+
+@media (max-width: $desktop-width) {
+  .page-main__tabs-prices-wrapper {
+    background: none;
+  }
+}

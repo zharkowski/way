@@ -3,6 +3,7 @@
 @import "variables";
 @import "scaffolding";
 @import "mixins";
+@import "blocks/button";
 @import "blocks/list";
 @import "blocks/page-header";
 @import "blocks/visually-hidden";
@@ -14,10 +15,11 @@
 @import "blocks/contacts";
 @import "blocks/corporate-trip";
 @import "blocks/intro";
-@import "blocks/button";
 @import "blocks/card";
 @import "blocks/places";
 @import "blocks/tabs";
+@import "blocks/country";
+@import "blocks/review";
 
 // временно для разметки
 //@import "outline";

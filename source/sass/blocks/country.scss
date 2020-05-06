@@ -1,0 +1,163 @@
+.country {
+  display: flex;
+}
+
+.country__description {
+  margin-right: 100px;
+}
+
+.country__title {
+  display: flex;
+  margin: 0 0 53px 0;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  align-items: center;
+  letter-spacing: -1.245px;
+  color: $dark;
+}
+
+.country__text {
+  width: 370px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+  color: rgba(44, 46, 63, 0.7);
+}
+
+.country__button {
+  width: 250px;
+  padding: 0 39px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.country__review {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  min-height: 596px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 430px 596px;
+  flex-grow: 1;
+}
+
+.country__review--greece {
+  background-image: url("../img/countries-greece-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/countries-greece-desktop@2x.jpg");
+  }
+}
+
+.country__review--albania {
+  background-image: url("../img/countries-albania-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/countries-albania-desktop@2x.jpg");
+  }
+}
+
+.country__review--macedonia {
+  background-image: url("../img/countries-macedonia-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/countries-macedonia-desktop@2x.jpg");
+  }
+}
+
+.country__review--montenegro {
+  background-image: url("../img/countries-montenegro-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/countries-montenegro-desktop@2x.jpg");
+  }
+}
+
+.country__review--croatia {
+  background-image: url("../img/countries-croatia-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/countries-croatia-desktop@2x.jpg");
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .country {
+    display: block;
+  }
+
+  .country__description {
+    margin-right: $tablet-padding;
+    margin-left: $tablet-padding;
+    text-align: center;
+  }
+
+  .country__title {
+    justify-content: center;
+    font-size: 30px;
+    line-height: 150%;
+    mix-blend-mode: normal;
+  }
+
+  .country__text {
+    width: auto;
+  }
+
+  .country__button {
+    margin: 20px auto 30px;
+  }
+
+  .country__review {
+    min-height: 0;
+    margin-top: 20px;
+    padding-top: 60px;
+    background-image: url("../img/countries-greece-tablet@1x.jpg");
+    background-size: 100%;
+    background-position: 0 -15px;
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background-image: url("../img/countries-greece-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .country__description {
+    margin-right: $mobile-padding;
+    margin-left: $mobile-padding;
+  }
+
+  .country__review {
+    text-align: center;
+    padding-top: 50px;
+
+    background-image: url("../img/countries-greece-mobile@1x.jpg");
+    background-size: 100%;
+    background-position: 0 0;
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background-image: url("../img/countries-greece-mobile@2x.jpg");
+    }
+  }
+
+  .country__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .country__text {
+    margin-bottom: 20px;
+  }
+
+  .country__button {
+    width: 288px;
+    margin-bottom: 50px;
+  }
+}
