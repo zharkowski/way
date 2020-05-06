@@ -19,8 +19,9 @@
   color: $text-color;
 
 
-  &--complex {
+  &:hover {
     border: 3px solid $accent;
+    padding: 38px 28px 28px 28px;
   }
 }
 
@@ -32,7 +33,7 @@
   color: $text-color;
 }
 
-.tariff--complex .tariff__title-price-wrapper {
+.tariff:hover .tariff__title-price-wrapper {
   color: $accent;
 }
 
@@ -93,6 +94,11 @@
     border-bottom: none;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+
+    &:hover {
+      border-bottom: none;
+      padding: 28px 18px 0 18px;
+    }
   }
 
   .tariff__title-price-wrapper {

@@ -10,9 +10,9 @@
   }
 }
 
-@media (max-width: $tablet-padding) {
+@media (max-width: $tablet-width) {
   .corporate-trip {
-    margin-bottom: 25px;
+    margin-bottom: 0;
   }
 
   .corporate-trip__description {

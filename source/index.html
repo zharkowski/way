@@ -342,7 +342,27 @@
       </section>
     </div>
 
-    <section class="form"></section>
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <div class="feedback__window">
+          <h2 class="feedback__header">У Вас остались вопросы?</h2>
+          <p class="feedback__description">
+            Оставьте свой номер или e-mail и мы свяжемся с Вами
+          </p>
+          <form class="feedback__form" action="">
+            <div class="feedback__inputs">
+              <label class="feedback__label feedback__label--phone">
+                <input type="text" class="feedback__input feedback__phone" placeholder="+7 Введите 10 цифр номера" required>
+              </label>
+              <label>
+                <input type="text" class="feedback__input feedback__email" placeholder="E-mail">
+              </label>
+            </div>
+            <button type="submit" class="feedback__button button">отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -405,6 +425,29 @@
       </section>
     </div>
   </footer>
+
+  <div class="modal success">
+    <h1 class="success__header">Форма успешно отправлена, спасибо! :)</h1>
+    <button type="button" class="success__button success__button--close"><span class="visually-hidden">Закрыть окно</span></button>
+  </div>
+
+  <div class="modal buy">
+    <div class="buy__wrapper">
+      <h1 class="buy__header">Купить тур</h1>
+      <form class="buy__form" action="">
+        <div class="buy__inputs">
+          <label class="buy__label buy__label--phone">
+            <input type="text" class="buy__input buy__input--phone" placeholder="+7 Введите 10 цифр номера" required>
+          </label>
+          <label class="buy__label">
+            <input type="text" class="buy__input buy__input--email" placeholder="E-mail">
+          </label>
+        </div>
+        <button type="submit" class="buy__button buy__button--send button">отправить</button>
+      </form>
+      <button type="button" class="buy__button buy__button--close"><span class="visually-hidden">Закрыть окно</span></button>
+    </div>
+  </div>
 
   <script src="js/menu.js"></script>
   <script src="js/tabs.js"></script>
