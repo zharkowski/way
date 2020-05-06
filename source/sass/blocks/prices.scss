@@ -106,3 +106,13 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .prices {
+    margin-top: 45px;
+  }
+
+  .prices__element {
+    margin-bottom: 30px;
+  }
+}

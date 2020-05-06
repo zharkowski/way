@@ -137,3 +137,9 @@
     padding-left: 27px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .tariff {
+    min-height: 614px;
+  }
+}
