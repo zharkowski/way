@@ -352,7 +352,7 @@
           <form class="feedback__form" action="">
             <div class="feedback__inputs">
               <label class="feedback__label feedback__label--phone">
-                <input type="text" class="feedback__input feedback__phone" placeholder="+7 Введите 10 цифр номера" required>
+                <input type="text" class="feedback__input feedback__phone" placeholder="+7 Введите 10 цифр номера" pattern="[0-9]{10}" required>
               </label>
               <label>
                 <input type="text" class="feedback__input feedback__email" placeholder="E-mail">
@@ -440,7 +440,7 @@
         <form class="buy__form" action="">
           <div class="buy__inputs">
             <label class="buy__label buy__label--phone">
-              <input type="text" class="buy__input buy__input--phone" placeholder="+7 Введите 10 цифр номера" required>
+              <input type="text" class="buy__input buy__input--phone" placeholder="+7 Введите 10 цифр номера" pattern="[0-9]{10}" required>
             </label>
             <label class="buy__label">
               <input type="text" class="buy__input buy__input--email" placeholder="E-mail">

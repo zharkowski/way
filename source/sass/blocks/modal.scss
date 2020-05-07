@@ -12,3 +12,9 @@
 .modal--show {
   display: block;
 }
+
+@media (max-width: $tablet-width) {
+  .modal {
+    top: 100px;
+  }
+}

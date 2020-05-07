@@ -1,7 +1,5 @@
 const buyPopup = document.querySelector(`.buy`);
 const successPopup = document.querySelector(`.success`);
-// const buyPopupSendButton = buyPopup.querySelector(`.buy__button--send`);
-// const successPopupCloseButton = successPopup.querySelector(`.success__button--close`);
 const buyTourButtons = document.querySelectorAll(`.button--buy-tour`);
 const feedbackForm = document.querySelector(`.feedback__form`);
 
@@ -23,7 +21,7 @@ const keydownHandler = (evt) => {
 	}
 };
 const overlayClickHandler = (evt) => {
-	if (evt.target === buyPopup) {
+	if (evt.target === buyPopup || evt.target === successPopup) {
 		closePopup(evt);
 	}
 };
