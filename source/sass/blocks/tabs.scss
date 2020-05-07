@@ -40,13 +40,11 @@
   }
 
   .tabs__countries-list {
-    margin-top: 98px;
-    margin-left: $tablet-padding;
-    margin-right: $tablet-padding;
+    margin: 98px $tablet-padding 48px $tablet-padding;
     flex-wrap: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
-    margin-bottom: 48px;
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
       width: 0;

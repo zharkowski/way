@@ -26,6 +26,44 @@
   background-color: $accent-hover;
 }
 
+.button--close {
+  width: 22px;
+  height: 22px;
+  border: none;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.button--close::before,
+.button--close::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: -4px;
+
+  width: 30px;
+  height: 1px;
+
+  background-color: rgba(20, 21, 23, 0.2);
+}
+
+.button--close::before {
+  transform: rotate(45deg);
+}
+
+.button--close::after {
+  transform: rotate(-45deg);
+}
+
 @media (max-width: $desktop-width) {
   .button {
     width: 250px;

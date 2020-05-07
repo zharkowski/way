@@ -1,5 +1,10 @@
-.buy {
+.buy__wrapper {
   display: flex;
+  position: relative;
+  width: 728px;
+  height: 444px;
+  margin: 250px auto;
+  background-color: #FBF8F8;
   justify-content: right;
 
   background-image: url("../img/buy-modal-desktop@1x.jpg");
@@ -12,41 +17,8 @@
   }
 }
 
-.buy__wrapper {
+.buy__content {
   width: 390px;
-}
-
-.buy__button--close {
-  width: 22px;
-  height: 22px;
-  border: none;
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.buy__button--close::before,
-.buy__button--close::after {
-  content: "";
-  position: absolute;
-  top: 11px;
-  right: -4px;
-
-  width: 30px;
-  height: 1px;
-
-  background-color: rgba(20, 21, 23, 0.2);
-}
-
-.buy__button--close::before {
-  transform: rotate(45deg);
-}
-
-.buy__button--close::after {
-  transform: rotate(-45deg);
 }
 
 .buy__header {

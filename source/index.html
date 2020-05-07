@@ -166,7 +166,7 @@
                   достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера,
                   царящая в монастырях Метеоры.
                 </p>
-                <a href="#" class="country__button button"><span class="country__button-text">купить тур сейчас</span></a>
+                <button type="button" class="country__button button button--buy-tour"><span class="country__button-text">купить тур сейчас</span></button>
               </div>
               <div class="country__review country__review--greece review">
                 <div class="review__wrapper">
@@ -194,7 +194,7 @@
                   Однако, присмотревшись, можно понять, что это не песок, а камни,
                   перетёртые до такого мелкого состояния.
                 </p>
-                <a href="#" class="country__button button"><span class="country__button-text">купить тур сейчас</span></a>
+                <button type="button" class="country__button button button--buy-tour"><span class="country__button-text">купить тур сейчас</span></button>
               </div>
               <div class="country__review country__review--albania review">
                 <div class="review__wrapper">
@@ -219,7 +219,7 @@
                   Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится
                   археологический памятник Кокино в длину около 100 метров.
                 </p>
-                <a href="#" class="country__button button"><span class="country__button-text">купить тур сейчас</span></a>
+                <button type="button" class="country__button button button--buy-tour"><span class="country__button-text">купить тур сейчас</span></button>
               </div>
               <div class="country__review country__review--macedonia review">
                 <div class="review__wrapper">
@@ -244,7 +244,7 @@
                   который в некоторых местах высотой берегов доходит до 1300 метров,
                   а шириной не превышает трех. При этом длина каньона составляет 80 км.
                 </p>
-                <a href="#" class="country__button button"><span class="country__button-text">купить тур сейчас</span></a>
+                <button type="button" class="country__button button button--buy-tour"><span class="country__button-text">купить тур сейчас</span></button>
               </div>
               <div class="country__review country__review--montenegro review">
                 <div class="review__wrapper">
@@ -268,7 +268,7 @@
                   украшенных удивительными нерукотворными скульптурами —
                   сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.
                 </p>
-                <a href="#" class="country__button button"><span class="country__button-text">купить тур сейчас</span></a>
+                <button type="button" class="country__button button button--buy-tour"><span class="country__button-text">купить тур сейчас</span></button>
               </div>
               <div class="country__review country__review--croatia review">
                 <div class="review__wrapper">
@@ -316,7 +316,7 @@
                 <li class="tariff__item">Завтраки, ужины в отелях и ланчи на природе</li>
                 <li class="tariff__item">Экскурсии по удивительно красивым местам Европы</li>
               </ul>
-              <button class="tariff__button button">купить тур сейчас</button>
+              <button type="button" class="tariff__button button button--buy-tour">купить тур сейчас</button>
             </article>
           </li>
           <li class="prices__element">
@@ -335,7 +335,7 @@
                 <li class="tariff__item">Только завтраки в отелях</li>
                 <li class="tariff__item">Экскурсии по удивительно красивым местам Европы</li>
               </ul>
-              <button class="tariff__button button">купить тур сейчас</button>
+              <button type="button" class="tariff__button button button--buy-tour">купить тур сейчас</button>
             </article>
           </li>
         </ul>
@@ -427,25 +427,29 @@
   </footer>
 
   <div class="modal success">
-    <h1 class="success__header">Форма успешно отправлена, спасибо! :)</h1>
-    <button type="button" class="success__button success__button--close"><span class="visually-hidden">Закрыть окно</span></button>
+    <div class="success__wrapper">
+      <h1 class="success__header">Форма успешно отправлена, спасибо! :)</h1>
+      <button type="button" class="success__button button button--close"><span class="visually-hidden">Закрыть окно</span></button>
+    </div>
   </div>
 
   <div class="modal buy">
     <div class="buy__wrapper">
-      <h1 class="buy__header">Купить тур</h1>
-      <form class="buy__form" action="">
-        <div class="buy__inputs">
-          <label class="buy__label buy__label--phone">
-            <input type="text" class="buy__input buy__input--phone" placeholder="+7 Введите 10 цифр номера" required>
-          </label>
-          <label class="buy__label">
-            <input type="text" class="buy__input buy__input--email" placeholder="E-mail">
-          </label>
-        </div>
-        <button type="submit" class="buy__button buy__button--send button">отправить</button>
-      </form>
-      <button type="button" class="buy__button buy__button--close"><span class="visually-hidden">Закрыть окно</span></button>
+      <div class="buy__content">
+        <h1 class="buy__header">Купить тур</h1>
+        <form class="buy__form" action="">
+          <div class="buy__inputs">
+            <label class="buy__label buy__label--phone">
+              <input type="text" class="buy__input buy__input--phone" placeholder="+7 Введите 10 цифр номера" required>
+            </label>
+            <label class="buy__label">
+              <input type="text" class="buy__input buy__input--email" placeholder="E-mail">
+            </label>
+          </div>
+          <button type="submit" class="buy__button buy__button--send button">отправить</button>
+        </form>
+        <button type="button" class="buy__button button button--close"><span class="visually-hidden">Закрыть окно</span></button>
+      </div>
     </div>
   </div>
 
