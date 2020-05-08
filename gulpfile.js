@@ -60,7 +60,7 @@ gulp.task(`webp`, function () {
     .pipe(gulp.dest(`build/img`));
 });
 gulp.task(`sprite`, function () {
-  return gulp.src(`source/img/{icon-*}.svg`)
+  return gulp.src(`source/img/icon-*.svg`)
     .pipe(svgstore({inlineSvg: true}))
     .pipe(rename(`sprite_auto.svg`))
     .pipe(gulp.dest(`build/img`));
@@ -91,8 +91,8 @@ gulp.task(`build`, gulp.series(
     `clean`,
     `copy`,
     `css`,
-    // `images`,
-    // `webp`,
+    `images`,
+    `webp`,
     `sprite`,
     `html`
 ));

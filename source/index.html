@@ -12,11 +12,17 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <div class="visually-hidden">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
   <header class="page-header">
     <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
       <div class="page-header__logo-toggle-wrapper">
         <a class="page-header__logo-link">
-          <img class="page-header__logo-image" src="img/icon-way-logo.svg" alt="Логотип Way" width="57" height="22">
+          <svg class="page-header__logo-image" width="57" height="22">
+            <use xlink:href="#icon-way-logo"></use>
+          </svg>
         </a>
         <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
       </div>
@@ -30,7 +36,12 @@
           </li>
         </ul>
       </nav>
-      <a href="tel:+749978468446" class="page-header__phone">+7 (499) -784-684-46</a>
+      <a href="tel:+749978468446" class="page-header__phone">
+        <svg class="page-header__phone-icon" width="30" height="30">
+          <use xlink:href="#icon-phone"></use>
+        </svg>
+        <span class="page-header__phone-number">+7 (499) -784-684-46</span>
+      </a>
     </div>
   </header>
 
@@ -53,15 +64,14 @@
           <article class="places__card card">
             <h3 class="card__country">Греция</h3>
             <picture>
-<!--                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">-->
-<!--                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">-->
-<!--                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@1x.webp 2x">-->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cards-greece-tablet-mobile@1x.jpg 1x, img/cards-greece-tablet-mobile@2x.jpg 2x">
+              <source type="image/webp" srcset="img/cards-greece-desktop@1x.jpg 1x, img/cards-greece-desktop@2x.jpg 2x">
 
               <source media="(max-width: 1023px)" srcset="img/cards-greece-tablet-mobile@1x.jpg 1x, img/cards-greece-tablet-mobile@2x.jpg 2x">
               <img class="card__picture" src="img/cards-greece-desktop@1x.jpg" srcset="img/cards-greece-desktop@2x.jpg 2x" width="350" height="430" alt="Греция">
             </picture>
             <div class="card__link-wrapper">
-              <a class="card__link" href="#places">смотреть подробнее</a>
+              <a class="card__link" href="#tabs">смотреть подробнее</a>
             </div>
           </article>
         </li>
@@ -69,15 +79,14 @@
           <article class="places__card card">
             <h3 class="card__country">Албания</h3>
             <picture>
-              <!--                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">-->
-              <!--                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">-->
-              <!--                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@1x.webp 2x">-->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cards-albania-tablet-mobile@1x.jpg 1x, img/cards-albania-tablet-mobile@2x.jpg 2x">
+              <source type="image/webp" srcset="img/cards-albania-desktop@1x.jpg 1x, img/cards-albania-desktop@2x.jpg 2x">
 
               <source media="(max-width: 1023px)" srcset="img/cards-albania-tablet-mobile@1x.jpg 1x, img/cards-albania-tablet-mobile@2x.jpg 2x">
               <img class="card__picture" src="img/cards-albania-desktop@1x.jpg" srcset="img/cards-albania-desktop@2x.jpg 2x" width="350" height="430" alt="Албания">
             </picture>
             <div class="card__link-wrapper">
-              <a class="card__link" href="#places">смотреть подробнее</a>
+              <a class="card__link" href="#tabs">смотреть подробнее</a>
             </div>
           </article>
         </li>
@@ -85,15 +94,14 @@
           <article class="places__card card">
             <h3 class="card__country">Македония</h3>
             <picture>
-              <!--                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">-->
-              <!--                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">-->
-              <!--                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@1x.webp 2x">-->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cards-macedonia-tablet-mobile@1x.jpg 1x, img/cards-macedonia-tablet-mobile@2x.jpg 2x">
+              <source type="image/webp" srcset="img/cards-macedonia-desktop@1x.jpg 1x, img/cards-macedonia-desktop@2x.jpg 2x">
 
               <source media="(max-width: 1023px)" srcset="img/cards-macedonia-tablet-mobile@1x.jpg 1x, img/cards-macedonia-tablet-mobile@2x.jpg 2x">
               <img class="card__picture" src="img/cards-macedonia-desktop@1x.jpg" srcset="img/cards-macedonia-desktop@2x.jpg 2x" width="350" height="430" alt="Македония">
             </picture>
             <div class="card__link-wrapper">
-              <a class="card__link" href="#places">смотреть подробнее</a>
+              <a class="card__link" href="#tabs">смотреть подробнее</a>
             </div>
           </article>
         </li>
@@ -101,15 +109,14 @@
           <article class="places__card card">
             <h3 class="card__country">Черногория</h3>
             <picture>
-              <!--                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">-->
-              <!--                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">-->
-              <!--                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@1x.webp 2x">-->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cards-montenegro-tablet-mobile@1x.jpg 1x, img/cards-montenegro-tablet-mobile@2x.jpg 2x">
+              <source type="image/webp" srcset="img/cards-montenegro-desktop@1x.jpg 1x, img/cards-montenegro-desktop@2x.jpg 2x">
 
               <source media="(max-width: 1023px)" srcset="img/cards-montenegro-tablet-mobile@1x.jpg 1x, img/cards-montenegro-tablet-mobile@2x.jpg 2x">
               <img class="card__picture" src="img/cards-montenegro-desktop@1x.jpg" srcset="img/cards-montenegro-desktop@2x.jpg 2x" width="350" height="430" alt="Черногория">
             </picture>
             <div class="card__link-wrapper">
-              <a class="card__link" href="#places">смотреть подробнее</a>
+              <a class="card__link" href="#tabs">смотреть подробнее</a>
             </div>
           </article>
         </li>
@@ -117,15 +124,14 @@
           <article class="places__card card">
             <h3 class="card__country">Хорватия</h3>
             <picture>
-              <!--                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">-->
-              <!--                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">-->
-              <!--                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@1x.webp 2x">-->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cards-croatia-tablet-mobile@1x.jpg 1x, img/cards-croatia-tablet-mobile@2x.jpg 2x">
+              <source type="image/webp" srcset="img/cards-croatia-desktop@1x.jpg 1x, img/cards-croatia-desktop@2x.jpg 2x">
 
               <source media="(max-width: 1023px)" srcset="img/cards-croatia-tablet-mobile@1x.jpg 1x, img/cards-croatia-tablet-mobile@2x.jpg 2x">
               <img class="card__picture" src="img/cards-croatia-desktop@1x.jpg" srcset="img/cards-croatia-desktop@2x.jpg 2x" width="350" height="430" alt="Хорватия">
             </picture>
             <div class="card__link-wrapper">
-              <a class="card__link" href="#places">смотреть подробнее</a>
+              <a class="card__link" href="#tabs">смотреть подробнее</a>
             </div>
           </article>
         </li>
@@ -349,7 +355,7 @@
           <p class="feedback__description">
             Оставьте свой номер или e-mail и мы свяжемся с Вами
           </p>
-          <form class="feedback__form" action="">
+          <form class="feedback__form" action="#">
             <div class="feedback__inputs">
               <label class="feedback__label feedback__label--phone">
                 <input type="text" class="feedback__input feedback__phone" placeholder="+7 Введите 10 цифр номера" pattern="[0-9]{10}" required>
@@ -437,7 +443,7 @@
     <div class="buy__wrapper">
       <div class="buy__content">
         <h1 class="buy__header">Купить тур</h1>
-        <form class="buy__form" action="">
+        <form class="buy__form" action="#">
           <div class="buy__inputs">
             <label class="buy__label buy__label--phone">
               <input type="text" class="buy__input buy__input--phone" placeholder="+7 Введите 10 цифр номера" pattern="[0-9]{10}" required>
